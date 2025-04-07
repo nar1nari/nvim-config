@@ -4,7 +4,6 @@ return {
         require('vscode').setup({
             disable_nvimtree_bg = false,
         })
-        require('vscode').load()
     end
 }
 

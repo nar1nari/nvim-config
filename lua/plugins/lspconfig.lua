@@ -37,9 +37,8 @@ return {
   telemetry = { enable = false, },
 }}
       }
-      
+
       lspconfig.clangd.setup{}
-      
       lspconfig.phpactor.setup{}
       lspconfig.tsserver.setup{}
       lspconfig.html.setup{}

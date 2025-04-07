@@ -18,7 +18,7 @@ opt.showmatch = true
 
 opt.termguicolors = true
 
-vim.cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]
+-- vim.cmd [[autocmd BufEnter * set fo-=c fo-=r fo-=o]]
 
 opt.colorcolumn = "80"
 
@@ -27,5 +27,20 @@ opt.laststatus = 3
 
 opt.undofile = true
 
-vim.cmd [[highlight Normal guibg=none]]
-vim.cmd [[highlight NormalNC guibg=none]]
+-- vim.cmd [[highlight Normal guibg=none]]
+-- vim.cmd [[highlight NormalNC guibg=none]]
+opt.background = "dark"
+
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = '',
+    spacing = 4,
+  },
+})
+
+local signs = { Error = "", Warn = "", Hint = ""}
+
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+end;
