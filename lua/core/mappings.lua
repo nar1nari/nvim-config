@@ -15,21 +15,21 @@ vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts)
 
 local bufnr = vim.api.nvim_get_current_buf()
 vim.keymap.set(
-  "n", 
-  "<leader>a", 
-  function()
-    vim.cmd.RustLsp('codeAction') -- supports rust-analyzer's grouping
-    -- or vim.lsp.buf.codeAction() if you don't want grouping.
-  end,
-  { silent = true, buffer = bufnr }
+    "n",
+    "<leader>a",
+    function()
+        vim.cmd.RustLsp('codeAction') -- supports rust-analyzer's grouping
+        -- or vim.lsp.buf.codeAction() if you don't want grouping.
+    end,
+    { silent = true, buffer = bufnr }
 )
 vim.keymap.set(
-  "n", 
-  "K",  -- Override Neovim's built-in hover keymap with rustaceanvim's hover actions
-  function()
-    vim.cmd.RustLsp({'hover', 'actions'})
-  end,
-  { silent = true, buffer = bufnr }
+    "n",
+    "K",  -- Override Neovim's built-in hover keymap with rustaceanvim's hover actions
+    function()
+        vim.cmd.RustLsp({'hover', 'actions'})
+    end,
+    { silent = true, buffer = bufnr }
 )
 
 map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
@@ -52,3 +52,4 @@ map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 
 map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
+

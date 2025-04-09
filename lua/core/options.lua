@@ -32,15 +32,16 @@ opt.undofile = true
 opt.background = "dark"
 
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = '',
-    spacing = 4,
-  },
+    virtual_text = {
+        prefix = '',
+        spacing = 4,
+    },
 })
 
 local signs = { Error = "", Warn = "", Hint = ""}
 
 for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end;
+
