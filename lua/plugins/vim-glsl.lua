@@ -1,4 +1,5 @@
 return {
-    'tikhomirov/vim-glsl'
+    'tikhomirov/vim-glsl',
+    ft = { 'glsl', 'vert', 'frag', 'geom', 'comp' },
 }
 
