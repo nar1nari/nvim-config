@@ -39,10 +39,10 @@ return {
         }
 
         lspconfig.clangd.setup{}
-        lspconfig.phpactor.setup{}
-        lspconfig.tsserver.setup{}
-        lspconfig.html.setup{}
-        lspconfig.cssls.setup{}
+        -- lspconfig.phpactor.setup{}
+        -- lspconfig.tsserver.setup{}
+        -- lspconfig.html.setup{}
+        -- lspconfig.cssls.setup{}
     end,
 }
 
