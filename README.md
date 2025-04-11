@@ -6,7 +6,9 @@ This is my everyday use Neovim configuration, with the Oxocarbon theme and a pre
 
 - `xxd` -- for viewing hex files
 - `xclip` -- for system-wide clipboard
+- `nerd font` -- for icons
 - `rust-analyzer` -- for rust development
+(it's recommended to install `rust-analyzer` via `rustup` to ensure full functionality)
 
 ## Installation
 
