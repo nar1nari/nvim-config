@@ -3,26 +3,30 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " "
 
-map("n", "<leader>c", "<CMD>make<CR>", {})
--- map("n", "<leader>r", "<CMD>make run<CR>", {})
 map("n", ";", ":", {})
 
+-- Alpha --
+map('n', '<leader>a', '<Cmd>Alpha<CR>', opts)
+
+-- Go to definition --
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
 vim.keymap.set("n", "gt", function() vim.lsp.buf.type_definition() end, opts)
 
+-- Rename symbol --
 vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts)
 
+-- Rustaceanvim hover actions --
 local bufnr = vim.api.nvim_get_current_buf()
-vim.keymap.set(
-    "n",
-    "<leader>a",
-    function()
-        vim.cmd.RustLsp('codeAction') -- supports rust-analyzer's grouping
-        -- or vim.lsp.buf.codeAction() if you don't want grouping.
-    end,
-    { silent = true, buffer = bufnr }
-)
+-- vim.keymap.set(
+--     "n",
+--     "<leader>a",
+--     function()
+--         vim.cmd.RustLsp('codeAction') -- supports rust-analyzer's grouping
+--         -- or vim.lsp.buf.codeAction() if you don't want grouping.
+--     end,
+--     { silent = true, buffer = bufnr }
+-- )
 vim.keymap.set(
     "n",
     "K",  -- Override Neovim's built-in hover keymap with rustaceanvim's hover actions
@@ -32,6 +36,7 @@ vim.keymap.set(
     { silent = true, buffer = bufnr }
 )
 
+-- Buffer actions --
 map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
 
@@ -52,4 +57,3 @@ map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 
 map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
-

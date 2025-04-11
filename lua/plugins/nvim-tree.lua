@@ -31,7 +31,7 @@ return {
         local tree = require('nvim-tree.api')
         -- Nvim-Tree --
         map("n", "<leader>t", "<CMD>NvimTreeToggle<CR>", {})
-        map("n", "<leader>f", "<CMD>NvimTreeFocus<CR>", {})
+        -- map("n", "<leader>f", "<CMD>NvimTreeFocus<CR>", {})
         keymap.set('n', '+',     tree.fs.create,                         opts('Create'))
         keymap.set('n', '<A-Down>', tree.tree.change_root_to_node, opts('CD'))
         keymap.set('n', '<A-Up>',     tree.node.navigate.parent,              opts('Parent Directory'))
