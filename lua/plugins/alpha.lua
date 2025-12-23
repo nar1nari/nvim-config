@@ -38,8 +38,8 @@ return {
         local marginTopPercent = 0.1
         local headerPadding = fn.max { 2, fn.floor(fn.winheight(0) * marginTopPercent) }
 
+        local username = vim.env.USER or vim.env.USERNAME or "friend"
         local options = {
-
             header = {
                 type = "text",
                 val = {
@@ -51,7 +51,9 @@ return {
                     "   \\       \\ ~~~~~~   \\",
                     "   ==).      \\__________\\",
                     "  (__)       ()__________)",
-
+                    "",
+                    "Hi, " .. username .. ".",
+                    "Welcome back to Neovim."
                 },
                 opts = {
                     position = "center",
