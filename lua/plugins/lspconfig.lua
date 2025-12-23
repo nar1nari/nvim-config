@@ -3,6 +3,8 @@ return {
     config = function()
         vim.lsp.config('clangd', {})
         vim.lsp.enable('clangd')
+        vim.lsp.config('qmlls', {})
+        vim.lsp.enable('qmlls')
 
         vim.lsp.config('lua_ls', {
             on_init = function(client)
