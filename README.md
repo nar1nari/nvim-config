@@ -16,7 +16,7 @@ This is my everyday use Neovim configuration, with the Oxocarbon theme and a pre
 
 1. Clone this repo into the Neovim configuration directory:
     ```bash
-    git clone https://github.com/nar1nari/nvim-config ~/.config/nvim
+    git clone -b old https://github.com/nar1nari/nvim-config ~/.config/nvim
     ```
 
 2. Launch Neovim. On the first run, Lazy will automatically install all required plugins.
