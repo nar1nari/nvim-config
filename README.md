@@ -1,16 +1,11 @@
 # Neovim configuration
 
-This is my everyday use Neovim configuration, with the Oxocarbon theme and a pretty much comprehensive setup for Rust development.
-![Preview](./preview.png)
+This is the minimalistic Neovim config I use, which uses a minimum of plugin functions but provides full functionality for comfortable work.
 
 ## Dependencies (optional)
 
-- `xxd` -- for viewing hex files
-- `xclip` -- for system-wide clipboard
 - `nerd font` -- for icons
-- `ripgrep` -- for Telescope's find word
-- `rust-analyzer` -- for rust development
-(it's recommended to install `rust-analyzer` via `rustup` to ensure full functionality)
+- `ripgrep` -- for mini.pick
 
 ## Installation
 
@@ -19,7 +14,7 @@ This is my everyday use Neovim configuration, with the Oxocarbon theme and a pre
     git clone https://github.com/nar1nari/nvim-config ~/.config/nvim
     ```
 
-2. Launch Neovim. On the first run, Lazy will automatically install all required plugins.
+2. Launch Neovim. On the first run, Neovim will prompt to install all required plugins.
 
 3. Once installation is done, you are ready to go.
 
@@ -28,16 +23,6 @@ This is my everyday use Neovim configuration, with the Oxocarbon theme and a pre
 ```bash
 rm -rf ~/.config/nvim/* ~/.local/share/nvim/*
 ```
-
-## LSP Setup
-
-You can download necessary LSP's via Mason:
-
-```
-:Mason
-```
-
-And set them up in [lua/plugins/lspconfig.lua](./lua/plugins/lspconfig.lua)
 
 ## License
 

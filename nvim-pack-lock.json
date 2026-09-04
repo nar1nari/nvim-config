@@ -1,0 +1,72 @@
+{
+  "plugins": {
+    "friendly-snippets": {
+      "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
+      "src": "https://github.com/rafamadriz/friendly-snippets"
+    },
+    "gitsigns.nvim": {
+      "rev": "5be654f2232c10ddcad19c1607a67b6b4b78fc29",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "mini.base16": {
+      "rev": "d5f7b0db4559eb14c1c6c9e88aae95b9a79df408",
+      "src": "https://github.com/nvim-mini/mini.base16"
+    },
+    "mini.completion": {
+      "rev": "d2a2b2a2b5350b713ade3bb744df39eee7d4229b",
+      "src": "https://github.com/nvim-mini/mini.completion"
+    },
+    "mini.cursorword": {
+      "rev": "d06a70d2779851b2119459943312a4215039b153",
+      "src": "https://github.com/nvim-mini/mini.cursorword"
+    },
+    "mini.diff": {
+      "rev": "626b8a5b93874c4d05ca25aedec56cfff0b378fb",
+      "src": "https://github.com/nvim-mini/mini.diff"
+    },
+    "mini.hipatterns": {
+      "rev": "7c840c71d6a91f53d734cab2b6fe2290d285ec3b",
+      "src": "https://github.com/nvim-mini/mini.hipatterns"
+    },
+    "mini.icons": {
+      "rev": "98faae31e9be1cc054ae63485e58ceb185efcad0",
+      "src": "https://github.com/nvim-mini/mini.icons"
+    },
+    "mini.indentscope": {
+      "rev": "92fbaf895f83c59575ec599df532b297ebf62b14",
+      "src": "https://github.com/nvim-mini/mini.indentscope"
+    },
+    "mini.pairs": {
+      "rev": "b1c5a726921b7a8c9321e9a7a208aa0571de5810",
+      "src": "https://github.com/nvim-mini/mini.pairs"
+    },
+    "mini.pick": {
+      "rev": "04e73ab07222508361095bb6e27621b315e6b9f1",
+      "src": "https://github.com/nvim-mini/mini.pick"
+    },
+    "mini.snippets": {
+      "rev": "050638170639ceb7bef4e804507cbf209e565b2c",
+      "src": "https://github.com/nvim-mini/mini.snippets"
+    },
+    "nvim-lspconfig": {
+      "rev": "6fc041976833841cc9d991f45193533fe2a2e09b",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-web-devicons": {
+      "rev": "5f032a85be210cd1c6ac98861eb3b187ff3bd5eb",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "presence.nvim": {
+      "rev": "87c857a56b7703f976d3a5ef15967d80508df6e6",
+      "src": "https://github.com/andweeb/presence.nvim"
+    },
+    "rustaceanvim": {
+      "rev": "9499318abe813fd36da9be3bca4a52765f7c24f9",
+      "src": "https://github.com/mrcjkb/rustaceanvim"
+    },
+    "witch-line": {
+      "rev": "eed1550d0947da701e72f9816dd3b759081285fb",
+      "src": "https://github.com/sontungexpt/witch-line"
+    }
+  }
+}
